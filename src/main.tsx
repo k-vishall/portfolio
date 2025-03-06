@@ -11,10 +11,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 
 createRoot(document.getElementById("root")!).render(
   <ThemeProvider
-    attribute="class"
-    defaultTheme="system"
-    enableSystem
-    disableTransitionOnChange
+    // attribute="class"
+    // defaultTheme="system"
+    // enableSystem
+    // disableTransitionOnChange
   >
     <div className="flex min-h-screen flex-col">
       <Navbar />

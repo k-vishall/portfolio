@@ -1,7 +1,6 @@
 import { FaJava } from "react-icons/fa";
 import { SiLeetcode, SiCplusplus  } from "react-icons/si";
 import { Code, Database, Palette } from "lucide-react"; // Lucide icons
-import { ReactElement } from "react";
 import { IconType } from 'react-icons';
 import { LucideIcon } from 'lucide-react';
 
