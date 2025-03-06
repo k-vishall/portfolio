@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/wolf-dark.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishal Kumar</title>
+    <script>
+      function updateFavicon() {
+        const favicon = document.querySelector("link[rel='icon']");
+        const isDarkMode = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        favicon.href = isDarkMode ? "/wolf-light.png" : "/wolf-dark.png";
+      }
+      updateFavicon();
+      window
+        .matchMedia("(prefers-color-scheme: dark)")
+        .addEventListener("change", updateFavicon);
+    </script>
+    <script type="module" crossorigin src="/portfolio/assets/index-3r1H_oVw.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DiVFgr7R.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
