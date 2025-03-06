@@ -29,7 +29,7 @@ const ProjectsSection: React.FC = () => {
   };
 
   return (
-    <section id="projects" className="py-20 md:py-32">
+    <section id="projects" className="">
       <div className="section-container">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

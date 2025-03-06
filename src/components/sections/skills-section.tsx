@@ -20,7 +20,7 @@ const SkillsSection: React.FC = () => {
   };
 
   return (
-    <section id="skills" className="py-20 md:py-32 bg-muted/50">
+    <section id="skills" className="bg-muted/50">
       <div className="section-container">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

@@ -38,7 +38,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32">
+    <section id="contact" className="">
       <div className="section-container">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
