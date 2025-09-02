@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import profileImage from "@/assets/profile.jpg";
+import { AnimatedNumber } from "./animated-number";
+import { experienceMetrics } from "@/lib/data";
 
-const AboutSection: React.FC = () => {
+const AboutSection: React.FC = () => {  
   return (
     <section id="about" className="bg-muted/50">
       <div className="section-container">
@@ -65,6 +67,29 @@ const AboutSection: React.FC = () => {
                     and collaborations that push the boundaries of innovation.
                   </p>
                 </div>
+
+                {/* Experience Metrics Grid */}
+                <dl
+                  aria-label="Experience metrics"
+                  className="grid grid-cols-2 gap-4 md:grid-cols-4 md:gap-6 pt-6"
+                >
+                  {experienceMetrics.map((metric) => (
+                    <div
+                      key={metric.label}
+                      className="rounded-lg border bg-card p-4 md:p-6"
+                    >
+                      <dt className="sr-only">{metric.srLabel}</dt>
+                      <dd className="flex flex-col">
+                        <span className="text-sm text-muted-foreground">{metric.label}</span>
+                        <AnimatedNumber
+                          value={metric.value}
+                          suffix={metric.suffix}
+                          className="text-3xl font-semibold md:text-4xl"
+                        />
+                      </dd>
+                    </div>
+                  ))}
+                </dl>
               </motion.div>
             </div>
           </CardContent>
