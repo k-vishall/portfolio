@@ -1,4 +1,4 @@
-import { FaJava, FaNodeJs, FaReact } from "react-icons/fa";
+import { FaJava} from "react-icons/fa";
 import {
   SiCplusplus,
   SiPython,
@@ -6,13 +6,8 @@ import {
   SiPostgresql,
   SiSpringboot,
   SiDotnet,
-  SiMongodb,
-  SiFirebase,
-  SiTypescript,
-  SiJavascript,
-  SiTailwindcss,
 } from "react-icons/si";
-import { Code, Code2, Database, Palette, Terminal } from "lucide-react"; // Lucide icons
+import { Code,  Database, Palette, Terminal } from "lucide-react"; // Lucide icons
 import { TbBrandCSharp } from "react-icons/tb";
 import { IconType } from "react-icons";
 import { LucideIcon } from "lucide-react";
